@@ -229,7 +229,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Interfaces\IListItemView.cs" />
+    <Compile Include="Interfaces\ListEventArgs.cs" />
+    <Compile Include="Models\DatabaseHelper.cs" />
     <Compile Include="Models\ListItem.cs" />
+    <Compile Include="Presenters\TodoPresenter.cs" />
     <Compile Include="Views\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -286,7 +290,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Presenters\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
