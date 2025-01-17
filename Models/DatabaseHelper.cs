@@ -96,7 +96,7 @@ namespace TODOweb.Models
                 }
             }
 
-            public void UpdatePositions(List<int> idsInOrder)
+            public void UpdateItemPositions(List<int> idsInOrder)
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {

@@ -17,7 +17,7 @@ namespace TODOweb.Interfaces
         event EventHandler<ListEventArgs> OnDeleteItem;
         event EventHandler<ListEventArgs> OnMarkAsDone;
         event EventHandler<ListEventArgs> OnUpdateRowColor;
-        //event EventHandler<ListEventArgs> OnUpdatePositions;
+        event EventHandler<ListEventArgs> OnUpdatePositions;
 
         void SetListData(DataTable data);    
 

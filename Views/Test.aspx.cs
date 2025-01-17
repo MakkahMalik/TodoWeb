@@ -50,10 +50,23 @@ namespace TODOweb
                     MarkAsDone(id);
 
                 }
- 
                 else if (eventTarget == "UpdateRowColor")
                 {
                     UpdateRowColor(eventArgument);
+                }
+                else if (eventTarget == "UpdatePositions")
+                {
+                    if (!string.IsNullOrEmpty(eventArgument))
+                    {
+                        List<int> idsInOrder = JsonConvert.DeserializeObject<List<int>>(eventArgument);
+                        UpdatePositions(idsInOrder);
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Empty eventArgument for UpdatePositions.");
+                    }
+
                 }
 
             }
@@ -101,7 +114,7 @@ namespace TODOweb
 
         protected void UpdatePositions(List<int> idsInOrder)
        {
-           var args = new ListEventArgs { ItemIds = idsInOrder };
+            var args = new ListEventArgs { ItemIds = idsInOrder };
             OnUpdatePositions?.Invoke(this, args);
         }
 
