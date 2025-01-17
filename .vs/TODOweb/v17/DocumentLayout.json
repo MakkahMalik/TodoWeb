@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Github\\project\\TodoWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|d:\\github\\project\\todoweb\\views\\test.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:views\\test.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|d:\\github\\project\\todoweb\\views\\test.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:views\\test.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|D:\\Github\\project\\TodoWeb\\Presenters\\TodoPresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:Presenters\\TodoPresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,12 +15,20 @@
       "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:interfaces\\ilistitemview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|d:\\github\\project\\todoweb\\models\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:models\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|d:\\github\\project\\todoweb\\models\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:models\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|d:\\github\\project\\todoweb\\views\\test.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:views\\test.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|d:\\github\\project\\todoweb\\views\\test.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:views\\test.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|d:\\github\\project\\todoweb\\models\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39724229-AAA8-4CDD-AD2B-BB6D72BCAB60}|TODOweb.csproj|solutionrelative:models\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "D:\\Github\\project\\TodoWeb\\Models\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "Models\\DatabaseHelper.cs",
@@ -56,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ListEventArgs.cs",
               "DocumentMoniker": "D:\\Github\\project\\TodoWeb\\Interfaces\\ListEventArgs.cs",
               "RelativeDocumentMoniker": "Interfaces\\ListEventArgs.cs",
               "ToolTip": "D:\\Github\\project\\TodoWeb\\Interfaces\\ListEventArgs.cs",
               "RelativeToolTip": "Interfaces\\ListEventArgs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T11:48:05.769Z",
               "IsPinned": true,
@@ -70,11 +70,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
@@ -82,20 +78,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ListItem.cs",
               "DocumentMoniker": "D:\\Github\\project\\TodoWeb\\Models\\ListItem.cs",
               "RelativeDocumentMoniker": "Models\\ListItem.cs",
               "ToolTip": "D:\\Github\\project\\TodoWeb\\Models\\ListItem.cs",
               "RelativeToolTip": "Models\\ListItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T11:48:00.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Test.aspx",
               "DocumentMoniker": "D:\\Github\\project\\TodoWeb\\Views\\Test.aspx",
               "RelativeDocumentMoniker": "Views\\Test.aspx",
@@ -108,39 +104,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Test.aspx.cs",
               "DocumentMoniker": "D:\\Github\\project\\TodoWeb\\Views\\Test.aspx.cs",
               "RelativeDocumentMoniker": "Views\\Test.aspx.cs",
               "ToolTip": "D:\\Github\\project\\TodoWeb\\Views\\Test.aspx.cs",
               "RelativeToolTip": "Views\\Test.aspx.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAmwCUAAAAQAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAwDgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T11:06:53.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TodoPresenter.cs",
               "DocumentMoniker": "D:\\Github\\project\\TodoWeb\\Presenters\\TodoPresenter.cs",
               "RelativeDocumentMoniker": "Presenters\\TodoPresenter.cs",
               "ToolTip": "D:\\Github\\project\\TodoWeb\\Presenters\\TodoPresenter.cs",
               "RelativeToolTip": "Presenters\\TodoPresenter.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAzwD0AAAAJAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAmwC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T11:49:23.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "IListItemView.cs",
               "DocumentMoniker": "D:\\Github\\project\\TodoWeb\\Interfaces\\IListItemView.cs",
               "RelativeDocumentMoniker": "Interfaces\\IListItemView.cs",
               "ToolTip": "D:\\Github\\project\\TodoWeb\\Interfaces\\IListItemView.cs",
               "RelativeToolTip": "Interfaces\\IListItemView.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T10:09:47.094Z",
               "EditorCaption": ""

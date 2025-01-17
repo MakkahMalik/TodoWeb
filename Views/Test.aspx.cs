@@ -114,7 +114,11 @@ namespace TODOweb
 
         protected void UpdatePositions(List<int> idsInOrder)
        {
+<<<<<<< HEAD
             var args = new ListEventArgs { ItemIds = idsInOrder };
+=======
+           var args = new ListEventArgs { ItemIds = idsInOrder };
+>>>>>>> eb74c9cdc2ef7c19b85a21f77eb819993723ad76
             OnUpdatePositions?.Invoke(this, args);
         }
 
