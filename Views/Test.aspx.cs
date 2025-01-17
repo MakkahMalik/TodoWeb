@@ -22,6 +22,7 @@ namespace TODOweb
         public event EventHandler<ListEventArgs> OnDeleteItem;
         public event EventHandler<ListEventArgs> OnMarkAsDone;
         public event EventHandler<ListEventArgs> OnUpdatePositions;
+        public event EventHandler<ListEventArgs> OnUpdateItem;
         public event EventHandler<ListEventArgs> OnUpdateRowColor;
         private readonly TodoPresenter _presenter;
         public Test()
@@ -73,13 +74,17 @@ namespace TODOweb
 
             if (mode == "Update")
             {
-                //args.ItemId = int.Parse(hdnItemId.Value);
-                //OnUpdateItem?.Invoke(this, args);
+                args.ItemId = int.Parse(hdnItemId.Value);
+                OnUpdateItem?.Invoke(this, args);
             }
             else
             {
                 OnAddItem?.Invoke(this, args);
             }
+            add_new.Text = string.Empty;
+            hdnItemId.Value = "0";
+            hdnMode.Value = "Add";
+         
         }
 
         protected void DeleteRecord(int id)
@@ -94,16 +99,22 @@ namespace TODOweb
             OnMarkAsDone?.Invoke(this, args);
         }
 
-        //protected void UpdatePositions(List<int> idsInOrder)
-        //{
-        //    var args = new ListEventArgs { ItemIds = idsInOrder };
-        //    OnUpdatePositions?.Invoke(this, args);
-        //}
+        protected void UpdatePositions(List<int> idsInOrder)
+       {
+           var args = new ListEventArgs { ItemIds = idsInOrder };
+            OnUpdatePositions?.Invoke(this, args);
+        }
 
         protected void UpdateRowColor(string eventArgument)
         {
             var args = new ListEventArgs { Action = eventArgument };
             OnUpdateRowColor?.Invoke(this, args);
+        }
+
+        protected void UpdateItem(int id, string description)
+        {
+            var args = new ListEventArgs { ItemId = id, Description = description };
+            OnUpdateItem?.Invoke(this, args);
         }
 
 
