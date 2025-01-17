@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
+using System.Web.UI;
 
 namespace TODOweb.Models
 {
@@ -28,6 +29,9 @@ namespace TODOweb.Models
 
             public void AddItem(string description, string listColor)
             {
+         
+            if (!string.IsNullOrWhiteSpace(description))
+            {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
                     con.Open();
@@ -42,7 +46,16 @@ namespace TODOweb.Models
                     cmd.Parameters.AddWithValue("@ItemPosition", newPosition);
                     cmd.Parameters.AddWithValue("@ListColor", listColor);
                     cmd.ExecuteNonQuery();
-                }
+                } 
+                }else
+                {
+                //    string spanId = "errorSpan";
+                //    string errorMessage = "Description cannot be empty";
+                //page.ClientScript.RegisterStartupScript(page.GetType(), "SetErrorMessage",
+                //$"document.getElementById('{spanId}').innerText = '{errorMessage}';", true);
+            }
+            
+            
             }
 
             public void UpdateItem(int itemId, string description)
