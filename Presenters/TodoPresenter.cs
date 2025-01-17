@@ -23,9 +23,10 @@ namespace TODOweb.Presenters
             model = new DatabaseHelper();
             _view.OnAddItem += AddItem;
             _view.OnDeleteItem += DeleteItem;
+            _view.OnMarkAsDone += MarkAsDone;
             //_view.OnUpdateItem += UpdateItem;
             //_view.OnDeleteItem += DeleteItem;
-            //_view.OnMarkAsDone += MarkAsDone;
+
             //_view.OnUpdatePositions += UpdatePositions;
         }
 
@@ -35,19 +36,21 @@ namespace TODOweb.Presenters
             var data = model.GetData();
             _view.SetListData(data);
         }
-
         private void AddItem(object sender, ListEventArgs e)
         {
             model.AddItem(e.Description, e.ListColor);
             LoadData();
         }
-
-
         private void DeleteItem(object sender, ListEventArgs e)
         {
             model.DeleteItem(e.ItemId);
             LoadData();
         }
 
+        private void MarkAsDone(object sender, ListEventArgs e)
+        {
+            model.MarkItemAsDone(e.ItemId);
+            LoadData();
+        }
     }
 }

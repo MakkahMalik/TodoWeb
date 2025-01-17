@@ -20,6 +20,8 @@ namespace TODOweb
     {
         public event EventHandler<ListEventArgs> OnAddItem;
         public event EventHandler<ListEventArgs> OnDeleteItem;
+        public event EventHandler<ListEventArgs> OnMarkAsDone;
+
         private readonly TodoPresenter _presenter;
         public Test()
         {
@@ -33,11 +35,18 @@ namespace TODOweb
             }
             else
             {
-
+                string eventTarget = Request["__EVENTTARGET"];
+                string eventArgument = Request["__EVENTARGUMENT"];
                 if (Request["__EVENTTARGET"] == "DeleteRecord")
                 {
                     int id = int.Parse(Request["__EVENTARGUMENT"]);
                     DeleteRecord(id); // Call your existing DeleteRecord method
+                }
+                else if (eventTarget == "MarkAsDone")
+                {
+                    int id = int.Parse(Request["__EVENTARGUMENT"]);
+                    MarkAsDone(id);
+
                 }
 
                 // Handle the events when it's a postback
@@ -125,6 +134,12 @@ namespace TODOweb
         {
             var args = new ListEventArgs { ItemId = id };
             OnDeleteItem?.Invoke(this, args);
+        }
+
+        protected void MarkAsDone(int id)
+        {
+            var args = new ListEventArgs { ItemId = id };
+            OnMarkAsDone?.Invoke(this, args);
         }
 
 
