@@ -24,9 +24,10 @@ namespace TODOweb.Presenters
             _view.OnAddItem += AddItem;
             _view.OnDeleteItem += DeleteItem;
             _view.OnMarkAsDone += MarkAsDone;
+            _view.OnUpdateRowColor += UpdateRowColor;
             //_view.OnUpdateItem += UpdateItem;
             //_view.OnDeleteItem += DeleteItem;
-
+           
             //_view.OnUpdatePositions += UpdatePositions;
         }
 
@@ -52,5 +53,23 @@ namespace TODOweb.Presenters
             model.MarkItemAsDone(e.ItemId);
             LoadData();
         }
+       
+        //private void UpdatePositions(object sender , ListEventArgs e)
+        //{
+        //    List<int> idsInOrder = new List<int> { e.ItemId};
+        //    model.UpdatePositions(idsInOrder);
+        //    LoadData();
+        //}
+
+
+        private void UpdateRowColor(object sender, ListEventArgs e)
+        {
+
+            model.UpdateRowColor(e.Action);
+            LoadData();
+        }
+
+
+
     }
 }

@@ -21,7 +21,8 @@ namespace TODOweb
         public event EventHandler<ListEventArgs> OnAddItem;
         public event EventHandler<ListEventArgs> OnDeleteItem;
         public event EventHandler<ListEventArgs> OnMarkAsDone;
-
+        public event EventHandler<ListEventArgs> OnUpdatePositions;
+        public event EventHandler<ListEventArgs> OnUpdateRowColor;
         private readonly TodoPresenter _presenter;
         public Test()
         {
@@ -48,64 +49,15 @@ namespace TODOweb
                     MarkAsDone(id);
 
                 }
+ 
+                else if (eventTarget == "UpdateRowColor")
+                {
+                    UpdateRowColor(eventArgument);
+                }
 
-                // Handle the events when it's a postback
-                //string eventTarget = Request["__EVENTTARGET"];
-                //string eventArgument = Request["__EVENTARGUMENT"];
-
-                //if (eventTarget == "MarkAsDone")
-                //{
-                //    int itemId;
-                //    if (int.TryParse(eventArgument, out itemId))
-                //    {
-                //        // Call the method to mark the item as done in the database
-                //        MarkItemAsDoneInDatabase(itemId);
-                //    }
-                //    else
-                //    {
-                //        // Handle invalid itemId
-                //        Console.WriteLine("Invalid item ID.");
-                //    }
-                //}
-
-                //else if (eventTarget == "UpdateRowColor")
-                //{
-                //    UpdateRowColor(eventArgument);
-                //}
-                //else if (eventTarget == "UpdatePositions")
-                //{
-                //    if (!string.IsNullOrEmpty(eventArgument))
-                //    {
-                //        List<int> idsInOrder = JsonConvert.DeserializeObject<List<int>>(eventArgument);
-
-                //        UpdatePositions(idsInOrder);
-
-                //    }
-                //    else
-                //    {
-                //        Console.WriteLine("Empty eventArgument for UpdatePositions.");
-                //    }
-
-                //}
-                //else if (eventTarget == "DeleteRecord")
-                //{
-                //    // Parse the itemId from the event argument
-                //    if (int.TryParse(eventArgument, out int id))
-                //    {
-                //        DeleteRecord(id);
-                //    }
-                //    else
-                //    {
-                //        Console.WriteLine("Invalid item ID.");
-                //    }
-                //}
-
-
-                //DataTable dt = getData();
-                //Repeater1.DataSource = dt;
-                //Repeater1.DataBind();
             }
-        }
+
+            }
 
         public void SetListData(DataTable data)
         {
@@ -142,9 +94,17 @@ namespace TODOweb
             OnMarkAsDone?.Invoke(this, args);
         }
 
+        //protected void UpdatePositions(List<int> idsInOrder)
+        //{
+        //    var args = new ListEventArgs { ItemIds = idsInOrder };
+        //    OnUpdatePositions?.Invoke(this, args);
+        //}
 
-
-
+        protected void UpdateRowColor(string eventArgument)
+        {
+            var args = new ListEventArgs { Action = eventArgument };
+            OnUpdateRowColor?.Invoke(this, args);
+        }
 
 
     }

@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.UI.WebControls;
 
 namespace TODOweb.Models
 {
@@ -97,7 +98,36 @@ namespace TODOweb.Models
                     }
                 }
             }
+
+          public void UpdateRowColor(string eventArgument)
+        {
+
+            // Parse the row ID and selected color
+            string[] args = eventArgument.Split(';');
+            int rowId = int.Parse(args[0]);
+            string selectedColor = args[1];
+
+            // Update the database with the selected color
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                string query = "UPDATE ListItems SET ListColor = @ListColor WHERE ListItemId = @ListItemId";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@ListColor", selectedColor);
+                    cmd.Parameters.AddWithValue("@ListItemId", rowId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+        
         }
 
 
+
+
+
     }
+
+
+}
