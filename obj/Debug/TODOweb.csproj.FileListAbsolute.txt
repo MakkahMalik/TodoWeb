@@ -176,3 +176,13 @@ D:\Github\project\TodoWeb\obj\Debug\TODOweb.csproj.CoreCompileInputs.cache
 D:\Github\project\TodoWeb\obj\Debug\TODOweb.csproj.Up2Date
 D:\Github\project\TodoWeb\obj\Debug\TODOweb.dll
 D:\Github\project\TodoWeb\obj\Debug\TODOweb.pdb
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.xml
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\Github\project\TodoWeb\bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
